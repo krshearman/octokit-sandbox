@@ -1,10 +1,10 @@
 require 'octokit'
 require 'dotenv/load'
 
-client = Octokit::Client.new(:access_token => ENV['PAT']
+client = Octokit::Client.new(:access_token => ENV['PAT'])
 
 # Example: List repositories for a user
-repos = client.repositories('')
+repos = client.repositories('krshearman')
 
 # Print out the name and description of each repository
 repos.each do |repo|

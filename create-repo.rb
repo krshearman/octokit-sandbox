@@ -11,7 +11,7 @@ end
 new_repo_name = ARGV[0]
 
 # Replace 'your-personal-access-token' with your actual GitHub personal access token
-client = Octokit::Client.new(:access_token => ENV['PAT']
+client = Octokit::Client.new(:access_token => ENV['PAT'])
 
 # Define the new repository details
 new_repo_options = {
